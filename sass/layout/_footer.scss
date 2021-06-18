@@ -1,0 +1,15 @@
+.footer {
+  width: 100%;
+  grid-column: 1 / -1;
+  height: 20vh;
+  background-color: $color-dark-1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+  }
+}

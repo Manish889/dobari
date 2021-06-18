@@ -1,0 +1,27 @@
+
+$color-primary: #7ECA9C;
+$color-primary-light: #CCFFBD;
+$color-dark-1: #1C1427;
+$color-dark-2: #40394A;
+
+$color-grey-1: #555f61;
+
+$color-blue: #00B7C2;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Merriweather", serif;
+}

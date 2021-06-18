@@ -1,0 +1,28 @@
+.btn{
+    font-size: 1.2rem;
+    border: none;
+    padding: .5rem 2rem;
+    transition: background-color .2s;
+    cursor: pointer;
+    &--green {
+        background-color: $color-primary-light;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+    }
+
+   
+}
+
+.btn-big {
+    padding: 1.5rem 3.5rem;
+    font-size: 1.6rem;
+    background-color: $color-primary-light;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-primary;
+    }
+}
