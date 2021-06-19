@@ -101,11 +101,10 @@ body {
     background-color: #7ECA9C; }
 
 .banner {
-  grid-column: 2 / 8;
+  grid-column: 1 / -1;
   margin-top: 6rem;
   padding: 5rem;
-  height: 80vh;
-  width: 90vw;
+  width: 100%;
   background-image: linear-gradient(to right bottom, rgba(0, 183, 194, 0.5), #7eca9c);
   display: flex;
   flex-direction: column;
@@ -119,9 +118,9 @@ body {
     text-align: center; }
 
 .article {
-  grid-column: 2 / 8;
+  grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   padding: 5rem;
   grid-column-gap: 9rem;
   grid-row-gap: 5rem;
@@ -163,7 +162,8 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   position: relative;
-  transition: all .3s; }
+  transition: all .3s;
+  width: 100%; }
   .header__text {
     font-size: 1.5rem;
     line-height: 1.7;
