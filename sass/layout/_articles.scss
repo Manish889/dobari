@@ -1,18 +1,20 @@
 .article {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   padding: 5rem;
   grid-column-gap: 9rem;
   grid-row-gap: 5rem;
-  align-items: flex-start;
+  align-items: start;
   justify-items: center;
   
 
   &__card {
     border-radius: 0.5rem;
     box-shadow: 0 1rem 4rem rgba(#000, 0.2);
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
 
     &--home {
       border-right: 4px solid $color-primary-light;
@@ -26,11 +28,13 @@
     }
   }
   &__text-section {
+    grid-column: 1 / -1;
     padding: 2rem;
   }
   &__img {
+    grid-column: 1 / -1;
     width: 100%;
-    height: 30rem;
+    height: 25rem;
     border-radius: .5rem;
   }
 
