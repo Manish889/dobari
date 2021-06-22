@@ -7,7 +7,9 @@
   grid-row-gap: 5rem;
   align-items: start;
   text-align: center;
-  
+  &__title {
+    grid-column: 1 / -1;
+  }
   &__heading {
     font-size: 2rem;
   }

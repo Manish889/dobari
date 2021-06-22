@@ -1,7 +1,7 @@
 .banner {
   grid-column: 1 / -1;
   margin-top: 6rem;
-  padding: 7rem;
+  padding: 4rem 8vw;
   width: 100%;
   // background-image: linear-gradient(
   //   to right bottom,
@@ -13,7 +13,9 @@
   align-items: center;
   grid-column-gap: 4rem;
   grid-row-gap: 3rem;
-  
+  &__title {
+    grid-column: 1 / -1;
+  }
   &-2 {
     text-align: right;
   }
@@ -24,15 +26,19 @@
     text-transform: uppercase;
     letter-spacing: 1px;
   }
-  
   &__text {
-    // max-width: 70%;
+    max-width: 70%;
     font-size: 1.6rem;
     font-weight: 300;
     color: $color-grey-1;
     line-height: 1.5;
+    grid-column: 1 / 5;
+   
+    &--2 {
+      margin-left: auto;
+    }
   }
-
+ 
   &__section {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
