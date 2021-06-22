@@ -6,9 +6,17 @@
   grid-column-gap: 9rem;
   grid-row-gap: 5rem;
   align-items: start;
-  justify-items: center;
+  text-align: center;
   
+  &__heading {
+    font-size: 2rem;
+  }
 
+  &__text {
+    line-height: 2;
+    font-size: 1.3rem;
+    color: $color-grey-1;
+  }
   &__card {
     border-radius: 0.5rem;
     box-shadow: 0 1rem 4rem rgba(#000, 0.2);
@@ -41,6 +49,6 @@
 
   &__btn {
     grid-column: 1 / -1;
-    justify-self: flex-end;
+    justify-self: center;
   }
 }

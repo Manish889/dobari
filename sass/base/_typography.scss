@@ -8,41 +8,16 @@
     animation: heading-animate 1s .5s;
 }
 
-.banner__heading {
-    font-weight: 300;
+.sub-heading {
     font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    font-weight: 400;
+    display: block;
+    width: 100vw;
     text-align: center;
-}
-.article {
-    &__heading {
-        font-size: 2rem;
-      }
-    
-      &__text {
-        line-height: 2;
-        font-size: 1.3rem;
-        color: $color-grey-1;
-      }
+    margin-top: 5rem;
 }
 
 // about page
 .profile-text {
     font-size: 1.5rem;
-}
-
-
-.footer {
-    border-top: 5px solid $color-primary;
-    &__heading {
-        font-size: 1.4rem;
-        color: #f1f1f1;
-        text-transform: uppercase;
-        font-weight: 300;
-    }
-    &__text {
-        color: #fff;
-        font-size: 1.2rem;
-    }
 }

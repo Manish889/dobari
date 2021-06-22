@@ -1,11 +1,7 @@
 .header {
   height: calc(100vh - 10vh);
   grid-column: 1 / -1;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.3),
-      rgba($color-primary, 0.2)
-    ),
+  background-image: 
     url(../img/back-1.jpeg);
   background-size: cover;
   background-position: center;
@@ -26,7 +22,8 @@
     line-height: 1.7;
     font-weight: 700;
     animation: text-animate 1s ease-in 1.7s;
-    width: 70%;
+    width: 50%;
+    color: rgba(#fff, .5);
   }
 
 
