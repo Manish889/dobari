@@ -5,12 +5,23 @@
     grid-template-columns: repeat(10, 1fr);
     grid-gap: 1rem;
     padding: 6rem;
+    @media screen and (max-width: $bp-sm) {
+        & {
+            grid-template-rows: repeat(10, 5vh);
+            padding: .5rem;
+        }
+    }
     &__heading {
         font-size: 4rem;
         font-weight: 300;
         background-color: $color-primary;
         padding: 2rem;
         height: 100%;
+        @media screen and (max-width: $bp-sm) {
+            & {
+                font-size: 1.7rem;
+            }
+        }
     }
     &__img {
         width: 100%;
