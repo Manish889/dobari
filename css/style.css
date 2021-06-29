@@ -260,21 +260,34 @@ body {
   .navbar__list {
     display: flex;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: space-around;
+    font-size: 1.3rem; }
     @media screen and (max-width: 48em) {
       .navbar__list {
         display: none; } }
+    .navbar__list-visible {
+      z-index: 1000;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      position: absolute;
+      top: 10vh;
+      right: 0;
+      font-size: 2rem;
+      color: #fff;
+      background-color: blueviolet; }
   .navbar__item {
     padding: 1rem 2rem;
     list-style: none;
-    font-size: 1.3rem;
+    font-size: inherit;
     cursor: pointer;
     transition: all 0.2s; }
     .navbar__item:hover {
       transform: translateY(-3px);
       color: #1C1427;
       background-color: #7ECA9C; }
-  .navbar__hamburger {
+  .navbar__hamburger, .navbar__hamburger:focus {
     border: none;
     border-radius: 0;
     width: 3rem;
@@ -283,18 +296,18 @@ body {
     cursor: pointer;
     margin-right: 2rem;
     display: none; }
-    .navbar__hamburger::before, .navbar__hamburger::after {
+    .navbar__hamburger::before, .navbar__hamburger::after, .navbar__hamburger:focus::before, .navbar__hamburger:focus::after {
       display: block;
       content: "";
       width: 3rem;
       height: 4px;
       background-color: blueviolet; }
-    .navbar__hamburger::before {
+    .navbar__hamburger::before, .navbar__hamburger:focus::before {
       transform: translateY(-1rem); }
-    .navbar__hamburger::after {
+    .navbar__hamburger::after, .navbar__hamburger:focus::after {
       transform: translateY(0.6rem); }
     @media screen and (max-width: 48em) {
-      .navbar__hamburger {
+      .navbar__hamburger, .navbar__hamburger:focus {
         display: block; } }
 
 .footer {
@@ -338,7 +351,7 @@ body {
     height: 100%; }
     @media screen and (max-width: 48em) {
       .gallery__heading {
-        font-size: 1.7rem; } }
+        font-size: 1.8rem; } }
   .gallery__img {
     width: 100%;
     height: 100%;
