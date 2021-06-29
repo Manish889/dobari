@@ -1,0 +1,45 @@
+.organization {
+  grid-column: 1 / -1;
+  padding: 4rem 5rem;
+
+  &__heading {
+    width: 50%;
+    font-weight: 300;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    background-color: $color-dark-1;
+    color: #fff;
+    @media screen and (max-width: $bp-sm) {
+      & {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  &__text {
+    max-width: 60%;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $color-grey-1;
+    line-height: 1.5;
+    @media screen and (max-width: $bp-sm) {
+      & {
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  &__section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+    &-img {
+      border-radius: 0.5rem;
+      filter: brightness(110%);
+      width: 100%;
+    }
+  }
+}

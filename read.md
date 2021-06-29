@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobari Documentary website</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="home-page">
+    <nav class="navbar">
+        <!-- <h1 class="navbar__logo">Documentary on Dobari</h1> -->
+        <img src="img/Dobari.png" alt="" class="navbar__logo">
+        <ul class="navbar__list" id="navlist">
+            <a href="about.html" class="navbar__link">
+                <li class="navbar__item">Home</li>
+            </a>
+            <a href="about.html" class="navbar__link">
+                <li class="navbar__item">Pages</li>
+            </a>
+            <a href="about.html" class="navbar__link">
+                <li class="navbar__item">Photos</li>
+            </a>
+            <a href="about.html" class="navbar__link">
+                <li class="navbar__item">Stories</li>
+            </a>
+            <a href="about.html" class="navbar__link">
+                <li class="navbar__item">About</li>
+            </a>
+        </ul>
+        <div id="hamburger" class="navbar__hamburger">
+            <i id="hamburger-icon" class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+
+    <footer class="footer">
+        <div class="footer__left">
+            <h3 class="footer__heading mb-sm">
+                Nav yuvak mangal dal dobari
+            </h3>
+            <p class="footer__text">
+                Made by Manish rawat &copy; 2021
+            </p>
+        </div>
+
+        <div class="footer__right">
+            <img src="img/back.jpg" class="footer__img" alt="">
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
