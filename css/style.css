@@ -65,13 +65,12 @@ body {
   margin-bottom: 8rem; }
 
 .btn {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   border: none;
-  padding: .5rem 2rem;
+  padding: 1rem 2rem;
   transition: background-color .2s;
-  cursor: pointer; }
-  .btn--green {
-    background-color: #CCFFBD; }
+  cursor: pointer;
+  background-color: #CCFFBD; }
   .btn:hover {
     background-color: #7ECA9C; }
 
@@ -270,13 +269,12 @@ body {
       height: 90vh;
       display: flex;
       flex-direction: column;
-      width: 50%;
+      width: 100%;
       position: absolute;
       top: 10vh;
       right: 0;
       font-size: 2rem;
-      color: #fff;
-      background-color: blueviolet; }
+      background-color: #1C1427; }
   .navbar__item {
     padding: 1rem 2rem;
     list-style: none;
@@ -287,27 +285,14 @@ body {
       transform: translateY(-3px);
       color: #1C1427;
       background-color: #7ECA9C; }
-  .navbar__hamburger, .navbar__hamburger:focus {
-    border: none;
-    border-radius: 0;
-    width: 3rem;
-    height: 4px;
-    background-color: blueviolet;
+  .navbar__hamburger {
     cursor: pointer;
+    display: none;
+    font-size: 4rem;
     margin-right: 2rem;
-    display: none; }
-    .navbar__hamburger::before, .navbar__hamburger::after, .navbar__hamburger:focus::before, .navbar__hamburger:focus::after {
-      display: block;
-      content: "";
-      width: 3rem;
-      height: 4px;
-      background-color: blueviolet; }
-    .navbar__hamburger::before, .navbar__hamburger:focus::before {
-      transform: translateY(-1rem); }
-    .navbar__hamburger::after, .navbar__hamburger:focus::after {
-      transform: translateY(0.6rem); }
+    z-index: 100; }
     @media screen and (max-width: 48em) {
-      .navbar__hamburger, .navbar__hamburger:focus {
+      .navbar__hamburger, .navbar__hamburger-icon {
         display: block; } }
 
 .footer {

@@ -39,14 +39,14 @@
     height: 90vh;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     position: absolute;
     top: 10vh;
     right: 0;
     font-size: 2rem;
-    color: #fff;
-    background-color: blueviolet;
+    background-color: $color-dark-1;
   }
+  
   }
   &__item {
     padding: 1rem 2rem;
@@ -60,35 +60,19 @@
       background-color: $color-primary;
     }
   }
-  &__hamburger,
-  &__hamburger:focus {
-    border: none;
-    border-radius: 0;
-    width: 3rem;
-    height: 4px;
-    background-color: blueviolet;
+  &__hamburger {
     cursor: pointer;
-    margin-right: 2rem;
     display: none;
-    &::before,
-    &::after {
-      display: block;
-      content: "";
-      width: 3rem;
-      height: 4px;
-      background-color: blueviolet;
+    font-size: 4rem;
+    margin-right: 2rem;
+    z-index: 100;
+  
+  @media screen and (max-width: $bp-sm) {
+    &, 
+    &-icon {
+        display: block;
     }
-    &::before {
-      transform: translateY(-1rem);
-    }
-    &::after {
-      transform: translateY(0.6rem);
-    }
-    @media screen and (max-width: $bp-sm) {
-      & {
-          display: block;
-      }
-  }
-  }
+}
+}
   
 }
