@@ -266,12 +266,12 @@ body {
         display: none; } }
     .navbar__list-visible {
       z-index: 1000;
-      height: 90vh;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       width: 100%;
-      position: absolute;
-      top: 10vh;
+      position: fixed;
+      top: 0;
       right: 0;
       font-size: 2rem;
       background-color: #1C1427; }
@@ -289,8 +289,11 @@ body {
     cursor: pointer;
     display: none;
     font-size: 4rem;
-    margin-right: 2rem;
-    z-index: 100; }
+    position: fixed;
+    top: .5rem;
+    right: 2rem;
+    z-index: 10001;
+    color: #00B7C2; }
     @media screen and (max-width: 48em) {
       .navbar__hamburger, .navbar__hamburger-icon {
         display: block; } }
