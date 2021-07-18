@@ -51,7 +51,7 @@
         <p class="header__text mb-sm">
             this is our beautiful village
         </p>
-        <button class="btn" id="model-open-btn">Read more</button>
+        <button data-model-target="#model" class="btn">Read more</button>
         <div class="header__down-arrow">
             <a href="#article" class='header__down-arrow-link'>
                 <i class="fas fa-caret-down"></i>
@@ -62,12 +62,14 @@
     <div class="model" id="model">
         <div class="model__header mb-sm">
             <h2 class="model__header-heading">Lorem, ipsum dolor.</h2>
-            <button class="model__btn" id="model-close-btn"><i class="fas fa-times"></i></button>
+            <button class="model__btn" data-model__btn ><i class="fas fa-times"></i></button>
         </div>
-       <div class="model__body">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, velit. Officia ipsum ad veritatis nobis
-            consectetur, aliquam totam! Eum, tenetur.</p>
-       </div>
+        <div class="model__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, velit. Officia ipsum ad veritatis nobis
+                consectetur, aliquam totam! Eum, tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis perspiciatis amet tenetur dicta consectetur, ut illo necessitatibus magnam doloribus
+                quibusdam ad inventore tempora excepturi perferendis, nulla ducimus accusantium soluta voluptate!</p>
+        </div>
     </div>
     <div class="model__overlay" id="model__overlay"></div>
 
@@ -111,7 +113,7 @@
                 sed
                 dolore laborum temporibus?
             </p>
-            <button class="banner__btn btn-big">Read more</button>
+            <a href="organization.html"><button class="banner__btn btn-big">Read more</button></a>
         </div>
     </div>
 
@@ -127,38 +129,80 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eveniet hic consequuntur iure
                     laboriosam placeat voluptates, optio debitis quod nulla.
                 </p>
-                <button class="btn btn--green">Read more &rarr;</button>
+                <button data-model-target="#sunset" class="btn btn--green">Read more &rarr;</button>
             </div>
         </div>
+
+        <div class="model" id="sunset">
+            <div class="model__header mb-sm">
+                <h2 class="model__header-heading">Sunset point</h2>
+                <button class="model__btn" data-model__btn ><i class="fas fa-times"></i></button>
+            </div>
+            <div class="model__body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, velit. Officia ipsum ad veritatis nobis
+                    consectetur, aliquam totam! Eum, tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Reiciendis perspiciatis amet tenetur dicta consectetur, ut illo necessitatibus magnam doloribus
+                    quibusdam ad inventore tempora excepturi perferendis, nulla ducimus accusantium soluta voluptate!</p>
+            </div>
+        </div>
+        <div class="model__overlay" id="model__overlay"></div>
 
         <div class="article__card article__card--home">
             <img src="img/20210620_175013.jpg" alt="" class="article__img">
             <div class="article__text-section">
                 <h2 class="article__heading mb-sm">
-                    Sunset point
+                    Manikhet
                 </h2>
                 <p class="article__text mb-md">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eveniet hic consequuntur iure
                     laboriosam placeat voluptates, optio debitis quod nulla.
                 </p>
-                <button class="btn btn--green">Read more &rarr;</button>
+                <button data-model-target="#manikhet" class="btn btn--green">Read more &rarr;</button>
             </div>
         </div>
+
+        <div class="model" id="manikhet">
+            <div class="model__header mb-sm">
+                <h2 class="model__header-heading">Manikhet</h2>
+                <button class="model__btn" data-model__btn ><i class="fas fa-times"></i></button>
+            </div>
+            <div class="model__body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, velit. Officia ipsum ad veritatis nobis
+                    consectetur, aliquam totam! Eum, tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Reiciendis perspiciatis amet tenetur dicta consectetur, ut illo necessitatibus magnam doloribus
+                    quibusdam ad inventore tempora excepturi perferendis, nulla ducimus accusantium soluta voluptate!</p>
+            </div>
+        </div>
+        <div class="model__overlay" id="model__overlay"></div>
 
         <div class="article__card article__card--home">
             <img src="img/20210620_084328.jpg" alt="" class="article__img">
             <div class="article__text-section">
                 <h2 class="article__heading mb-sm">
-                    Sunset point
+                    Barjoyi
                 </h2>
                 <p class="article__text mb-md">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eveniet hic consequuntur iure
                     laboriosam placeat voluptates, optio debitis quod nulla.
                 </p>
-                <button class="btn btn--green">Read more &rarr;</button>
+                <button data-model-target="#barjoyi" class="btn btn--green">Read more &rarr;</button>
             </div>
         </div>
-        <button class="article__btn btn-big">Show all &rarr;</button>
+
+        <div class="model" id="barjoyi">
+            <div class="model__header mb-sm">
+                <h2 class="model__header-heading">Barjoyi</h2>
+                <button class="model__btn" data-model__btn ><i class="fas fa-times"></i></button>
+            </div>
+            <div class="model__body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, velit. Officia ipsum ad veritatis nobis
+                    consectetur, aliquam totam! Eum, tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Reiciendis perspiciatis amet tenetur dicta consectetur, ut illo necessitatibus magnam doloribus
+                    quibusdam ad inventore tempora excepturi perferendis, nulla ducimus accusantium soluta voluptate!</p>
+            </div>
+        </div>
+        <div class="model__overlay" id="model__overlay"></div>
+        <a href="./stories.html" class="article__btn"><button class="btn-big">Show all &rarr;</button></a>
     </section>
 
     <!-- gallery section -->

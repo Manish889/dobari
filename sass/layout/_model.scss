@@ -3,7 +3,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  max-width: 70%;
+  width: 80rem;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   border: 2px solid $color-dark-1;
   padding: 2rem;
   border-radius: 0.5rem;
@@ -17,18 +22,24 @@
   }
  
   &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
+    @media screen and (max-width: $bp-sm) {
+        & {
+            font-size: 1.5rem;
+        }
+    }
   }
 
   &__body {
     font-size: 1.8rem;
+    max-width: 70%;
     
   }
 
   &__btn {
+      position: absolute;
+      top: 3rem;
+      right: 3rem;
       font-size: 2.5rem;
       background: none;
       border: none;
