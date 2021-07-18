@@ -234,6 +234,47 @@ body {
     .header__down-arrow-link {
       color: #7ECA9C; }
 
+.model {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  max-width: 70%;
+  border: 2px solid #1C1427;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #CCFFBD;
+  z-index: 10000;
+  transition: 200ms ease-in-out; }
+  .model-active {
+    transform: translate(-50%, -50%) scale(1); }
+  .model__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem; }
+  .model__body {
+    font-size: 1.8rem; }
+  .model__btn {
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    cursor: pointer; }
+  .model__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(64, 57, 74, 0.4);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: 200ms ease-in-out; }
+    .model__overlay-active {
+      pointer-events: all;
+      opacity: 1; }
+
 .navbar {
   grid-column: 1 / -1;
   justify-self: stretch;
