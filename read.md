@@ -23,7 +23,7 @@
 
 <body class="home-page">
     <nav class="navbar">
-        <!-- <h1 class="navbar__logo">Documentary on Dobari</h1> -->
+        <h1 class="navbar__logo">Documentary on Dobari</h1>
         <img src="img/Dobari.png" alt="" class="navbar__logo">
         <ul class="navbar__list" id="navlist">
             <a href="about.html" class="navbar__link">
