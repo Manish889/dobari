@@ -45,4 +45,7 @@ const closeModel = (model) => {
 }
 
 
+//  aos
+  AOS.init();
+
 
